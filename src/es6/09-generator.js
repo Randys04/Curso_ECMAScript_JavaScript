@@ -11,3 +11,18 @@ console.log(it.next().value);
 console.log(it.next().value);
 console.log(it.next().value);
 console.log(it.next().value);
+
+export function* getId() {
+    let id = 1;
+    while (true) { 
+        yield id;
+        id++;
+    }
+}
+  
+const id = getId();
+id.next().value
+id.next().value
+id.next().value
+id.next().value
+id.next().value
